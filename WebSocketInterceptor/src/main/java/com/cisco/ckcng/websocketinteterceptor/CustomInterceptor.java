@@ -22,7 +22,7 @@ public class CustomInterceptor implements HandshakeInterceptor {
 		logger.info("Inside before handshake");
 		logger.info("headers {}", request.getHeaders());
 		
-		if(request.getHeaders().get("accessToken").get(0).equals("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ91")) {
+		if(request.getHeaders().get("accessToken").get(0).equals("token")) {
 			logger.info("Connection Accepted: Valid Access Token");
 			return true;
 		}else {

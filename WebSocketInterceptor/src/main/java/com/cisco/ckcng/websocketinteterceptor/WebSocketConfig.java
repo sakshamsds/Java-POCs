@@ -12,7 +12,7 @@ import org.springframework.web.socket.server.standard.ServletServerContainerFact
 @EnableWebSocket
 public class WebSocketConfig implements WebSocketConfigurer{
 	
-	private String subscriptionURL = "/hello";
+	private String subscriptionURL = "/test";
 	
 	@Autowired
 	private CustomTextHandler handler;
